@@ -6,5 +6,10 @@
       "excludeFiles": "{tests/**,docs/**,sample-knowledge/**,data/**,.venv/**,__pycache__/**}"
     }
   },
-  "rewrites": [{"source": "/(.*)", "destination": "/api/index"}]
+  "rewrites": [
+    {
+      "source": "/:path*",
+      "destination": "/api/index?__convexa_route=/:path*"
+    }
+  ]
 }

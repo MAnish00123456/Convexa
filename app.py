@@ -175,9 +175,17 @@ class Handler(BaseHTTPRequestHandler):
     def error(self, message, status=400):
         self.send_json({"error": str(message)}, status)
 
-    def _path(self):
-        p = urlsplit(self.path)
-        return p.path, {k: v[0] for k, v in parse_qs(p.query).items() if v}
+def _path(self):
+    p = urlsplit(self.path)
+    params = {k: v[0] for k, v in parse_qs(p.query).items() if v}
+
+    original = params.pop("__convexa_route", None)
+    path = p.path
+
+    if path in ("/api/index", "/api/index.py") and original and original.startswith("/"):
+        path = original
+
+    return path, params
 
     def _read_json(self):
         length = int(self.headers.get("Content-Length", "0"))
