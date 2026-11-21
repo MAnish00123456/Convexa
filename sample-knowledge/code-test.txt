@@ -1,0 +1,3 @@
+Convexa plain-text extraction check.
+Breadth-first search explores graph nodes level by level using a queue.
+TEST PHRASE: breadth-first search

@@ -1,0 +1,7 @@
+Read the following exact sentence aloud while recording inside Convexa. Do NOT paste the sentence into the Transcript field if you are testing automatic transcription:
+
+"The project planning meeting agreed that caching improves dashboard performance and lowers response time."
+
+After processing, check that the transcript includes the spoken idea, then search for: dashboard performance
+
+IMPORTANT: Without a working voice transcription provider or supported browser speech recognition, Convexa saves the audio but cannot index the spoken words. In a SECOND test, paste the transcript yourself and confirm that manual transcript search works.

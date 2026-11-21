@@ -1,0 +1,4 @@
+# Match pyproject.toml for reproducible local and hosted installations.
+pypdf==6.21.4
+youtube-transcript-api==1.2.5
+cryptography==46.0.7

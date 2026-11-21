@@ -1,0 +1,5 @@
+# Standard installation includes PDF extraction, captions and encrypted key storage.
+-r requirements-optional.txt
+
+# Vercel runs Linux; local Windows users keep the built-in SQLite backend.
+libsql==0.1.11; sys_platform == "linux"

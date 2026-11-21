@@ -1,0 +1,6 @@
+STUDENT: What does HTTP 404 mean?
+ASSISTANT: It is a status code meaning the requested resource was not found.
+STUDENT: What should we record?
+ASSISTANT: Record status codes and structured JSON responses when debugging API requests.
+
+TEST SEARCH: structured JSON responses
